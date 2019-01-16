@@ -1,8 +1,8 @@
-require './config/application.rb'
+require 'sinatra/base'
+# TODO: Investigate better way to get the application controller loaded first
+require_relative 'controllers/application_controller'
+Dir[File.join(File.dirname(__FILE__), 'controllers', '**', '*.rb')].each {|file| require file unless file == 'controllers/application_controller' }
 
 class TrackerApi < Sinatra::Base
-
-    get '/' do 
-        "Hello Worlds"
-    end
+    use DynamicDataController
 end
