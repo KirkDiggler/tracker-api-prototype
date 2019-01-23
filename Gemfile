@@ -16,3 +16,10 @@ gem 'test-unit'
 
 gem 'thin'
 gem 'json'
+
+gem 'logging'
+gem 'rake'
+gem 'activerecord'
+gem 'sinatra-activerecord'
+gem 'sqlite3'
+
