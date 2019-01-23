@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require "sinatra/reloader" 
 
 # TODO: Investigate better way to get the application controller loaded first
 require './controllers/application_controller'

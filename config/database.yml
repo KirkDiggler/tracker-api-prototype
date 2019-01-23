@@ -1,3 +1,3 @@
 development:
   adapter: sqlite3
-  database: tracker_api_development
+  database: db/tracker_api_development
